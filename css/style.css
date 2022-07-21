@@ -118,7 +118,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 body {
     color: var(--color-primary);
     font-family: var(--font-family-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
@@ -144,7 +144,7 @@ li {
     color: var(--color-secondary);
     fill: var(--color-secondary);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.14;
     letter-spacing: 0.02em; 
     text-decoration: none;
@@ -381,97 +381,76 @@ main {
 /* Наша команда */
 .section-our-team {
     background-color: var(--color-background-third);
-}
-/* .container-our-team {
-    width: 1200px;
-    margin: 0 auto;
-} */
-.title-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-}
-.text-employment {
-    color: var(--color-secondary);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.section-our-team .flex-box{
     justify-content: space-between;
 }
-.our-team-box {
+
+.box-employment{
+    justify-content: space-between;
+    }
+.box-employment-item {
     background-color: var(--color-background-other);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
     box-shadow: 0px 1px 3px var(--color-secondary);
-    /* border-left: solid var(--color-secondary) 1px;
-    border-right: solid var(--color-secondary) 1px; */
 }
-.our-team-decorate {
-    padding: 30px 0;
+.box-employment__wrap {
+    padding: 1.875rem 0;
 }
-.flex-box-icons {
+.box-employment__name {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.625rem;
+}
+.box-employment__text {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.box-employment__thumb {
+    margin-top: 1rem;
+}
+
+.messenger-icon {
     display: flex;
     justify-content: center;
 }
-.our-team-icon {
-    margin-top: 16px;
+.messenger-icon__item {
+    margin: 0 0.312rem;
 }
-.our-team-list {
-    margin: 0 5px;
-    /* width: 44px;
-    height: 44px; */
-}
-.our-team-links {
+.messenger-icon__link {
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 12px;
+    padding: 0.75rem;
     border-radius: 100%;
     background-color: var(--color-background-other);
     transition: background-color var(--default-transition),
     fill var(--default-transition);
-    /* border: 1px solid var(--color-other); */
 }
-
-.our-team-link-icons {
-    width: 20px;
-    height: 20px;
+.messenger-icon__icon {
+    width: 1.25rem;
+    height: 1.25rem;
     fill: var(--color-always-clients);
     transition: fill var(--default-transition),
     background-color var(--default-transition);
-    /* background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* align-items: center; */
-    /* border: 1px solid var(--color-accent);
-    border-radius: 50px; */
-    /* margin: 5px;
-    margin-top: 16px; */
 }
-
-/* .our-team-links:hover,
-.our-team-links:focus{
-    background-color: var(--color-background-accent);
-} */
-
-.our-team-links:hover .our-team-link-icons,
-.our-team-links:focus .our-team-link-icons,
-.our-team-links:hover,.our-team-links:focus {
+.messenger-icon__link:hover .messenger-icon__icon,
+.messenger-icon__link:focus .messenger-icon__icon,
+.messenger-icon__link:hover,
+.messenger-icon__link:focus {
     fill: var(--color-background-other);
     background-color: var(--color-background-accent);
 }
 
 /* Постійні клієнти */
 .always-clients-list {
-    margin: 0 15px;
+    margin: 0 0.937rem;
 }
 .icon-clients {
     justify-content: center;
@@ -481,28 +460,28 @@ main {
     /* justify-content: center; */
     /* width: 170px;
     height: 92px; */
-    /* padding: 16px 32px; */
-    /* margin: 50px 15px; */
+    /* padding: 1rem 2rem; */
+    /* margin: 50px 10.312rem; */
     /* border: 1px solid var(--color-always-clients); */
-    /* border-radius: 4px; */
+    /* border-radius: 0.25rem; */
 /* } */
 .link-clients-box {
     display: flex;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     border: 1px solid var(--color-always-clients);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     transition: border var(--default-transition);
 }
 .icon-always-client {
     /* justify-content: center; */
-    /* padding: 16px 32px;
+    /* padding: 1rem 2rem;
     border: 1px solid var(--color-always-clients);
-    border-radius: 4px; */
+    border-radius: 0.25rem; */
     width: 106px;
     height: 60px;
     fill: var(--color-always-clients);
     transition: fill var(--default-transition);
-    /* margin: 50px 15px; */
+    /* margin: 50px 10.312rem; */
 }
 
 .link-clients-box:focus .icon-always-client,
@@ -521,13 +500,13 @@ main {
     color: var(--color-primary);
     font-family: var(--font-family-primary);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.62; 
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
     border: 1px solid var(--color-background-third);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     padding: 6px 22px;
     transition: color var(--default-transition),
     border var(--default-transition),
@@ -556,7 +535,7 @@ main {
 }
 /* Наші пропозиції */
 /* .our-orders {
-    padding-bottom: 94px;
+    padding-bottom: 90.25rem;
 } */
 .portfolio-ul {
     flex-wrap: wrap;
@@ -566,7 +545,7 @@ main {
 .portfolio-list {
     display: block;
     width: 370px;
-    height: 404px;
+    height: 25.25rem;
     background-color: var(--color-background-other);
     border: 1px solid var(--color-border);
     /* transition: box-shadow  var(--default-transition); */
@@ -585,16 +564,16 @@ main {
 .portfolio-list-link:focus .link-focus{
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 0.25rem 0.25rem rgba(0, 0, 0, 0.06), 
+    1px 0.25rem 6px rgba(0, 0, 0, 0.16);
 }
 
 .margin-portfolio-list {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .decorate-list {
     width: 100%;
-    padding: 20px 24px;
+    padding: 1.25rem 1.5rem;
 
 }
 .portfolio-box {
@@ -612,7 +591,7 @@ main {
     height: 100%;
     top: 0;
     left: 0;
-    padding: 63px 24px;
+    padding: 63px 1.5rem;
     background-color: var(--color-background-accent);
     opacity: 0.9;
     transform: translateY(101%);
@@ -637,13 +616,13 @@ main {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 /* Параграфи сторінки портфоліо */
 .text-portfolio {
     color: var(--color-secondary);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
@@ -660,11 +639,11 @@ main {
 .footer-title {
     color: var(--color-other);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 0.875rem;
+    line-height: 1rem;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /* Лого футер */
@@ -675,14 +654,14 @@ main {
     color: var(--color-background-other);
 }
 .footer-page .logo {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 /* Футер приєднуйтеся */
 .footer-join{
     display: flex;
     flex-direction: column;
     width: 206px;  
-    margin-top: 12px;
+    margin-top: 0.75rem;
     margin-left: 70px; 
 }
 .footer-flex-links {
@@ -694,12 +673,12 @@ main {
     /* border: 1px solid var(--color-fill-footer); */
     background-color: var(--color-fill-footer);
     border-radius: 100%;
-    padding: 12px;
+    padding: 0.75rem;
     transition: background-color var(--default-transition);
 }
 .footer-link-icon {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     fill: var(--color-other);
 }
 
@@ -720,7 +699,7 @@ main {
     flex-direction: column;
     /* max-width: 231px; */
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.71;
     letter-spacing: 0.03em; 
 }
@@ -749,8 +728,8 @@ main {
     display: block;
     width: 570px;
     height: 86px;
-    margin-left: 94px;
-    margin-top: 10px;
+    margin-left: 5.812rem;
+    margin-top: 0.625rem;
 }
 .form-footer-field {
     display: flex;
@@ -762,13 +741,13 @@ main {
     height: 50px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     color: var(--color-background-other);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    padding: 16px;
+    filter: drop-shadow(0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15));
+    border-radius: 0.25rem;
+    padding: 1rem;
     background-color: var(--color-background-secondary);
 }
 /* .form-thumb {
@@ -781,11 +760,11 @@ main {
     width: 200px;
     height: 50px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
     border: 1px solid var(--color-accent);
     background-color: var(--color-background-accent);
     color: var(--color-background-other);
@@ -794,9 +773,9 @@ main {
     transition: opacity var(--default-transition);
 }
 .form-button-icon {
-    margin-left: 10px;
-    width: 24px;
-    height: 24px;
+    margin-left: 0.625rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .form-button-subscribe:focus,
 .form-button-subscribe:hover {
@@ -849,7 +828,7 @@ main {
 .form-title {
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
@@ -867,7 +846,7 @@ main {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: auto;
     transform: translate(-50%,-50%);
     /* scale: 1; */
@@ -879,8 +858,8 @@ main {
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     border-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--color-background-other);
@@ -901,7 +880,7 @@ main {
     display: block;
     width: 448px;
     height: 342px;
-    margin: 12px 40px 20px;
+    margin: 0.75rem 40px 1.25rem;
 }
 
 .form-field-name,
@@ -912,7 +891,7 @@ main {
     width: 100%;
     height: 58px;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .form-input-icon {
     position: relative;
@@ -921,7 +900,7 @@ main {
     color: var(--color-secondary);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
@@ -930,7 +909,7 @@ main {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     padding-left: 42px;
     transition: border var(--default-transition);
 }
@@ -957,8 +936,8 @@ main {
     width: 100%;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
     transition: border var(--default-transition);
 }
 .form-text-area::placeholder {
@@ -974,8 +953,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 16px;
-    margin-bottom: 30px;
+    margin-left: 1rem;
+    margin-bottom: 1.875rem;
 }
 .form-allow-input {
     appearance: none;
@@ -984,7 +963,7 @@ main {
     color: var(--color-secondary);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10.25rem;
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
@@ -993,8 +972,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     margin-right: 8px;
     /* flex-shrink: 0; */
 }
@@ -1003,8 +982,8 @@ main {
     top: 0;
     left: 0;
     content:'';
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     border: 2px solid var(--color-primary);
     border-radius: 2px;
     opacity: 1;
@@ -1013,8 +992,8 @@ main {
 }
 .form-allow-icon {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     top: 0;
     left: 0;
     fill: var(--color-background-other);
@@ -1057,14 +1036,14 @@ main {
     width: 100%;
     height: 100%;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--color-background-other);
     background-color: var(--color-background-accent);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px; 
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem; 
     border: 1px solid var(--color-accent);
     cursor: pointer;
     transition: background-color var(--default-transition);
@@ -1072,7 +1051,7 @@ main {
 .form-button-submit:focus ,
 .form-button-submit:hover {
     background: #188CE8;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    /* box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15); */
 }
 
 /* .is-hidden {
