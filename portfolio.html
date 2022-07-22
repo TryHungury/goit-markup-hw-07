@@ -26,8 +26,8 @@
       <div class="container header-page__flex">
         <div class="header-page__nav header-page__outer-margin">
           <!-- Логотип -->
-          <a class="logo header-page__logo link" href="./index.html">
-            <span class="logo__first-half header-page__logo-first-half">Web</span><span class="logo__secondary-half header-page__logo-secondary-half">Studi</span>
+          <a class="logo logo__header-page link" href="./index.html">
+            <span class="logo__first-half-header">Web</span><span class="logo__secondary-half-header">Studi</span>
           </a>
           <!-- Навігація -->
           <nav class="navigation">
@@ -285,88 +285,92 @@
         </section>
       </div>
     </main>
-    <!-- Підвал -->
+    <!-- Футер -->
     <footer class="footer-page flex-box">
       <div class="container flex-box">
         <div>
           <!-- Логотип -->
-          <a class="logo" href="./index.html"
-            ><span class="logo-first-half">Web</span
-            ><span class="logo-secondary-half">Studi</span></a
+          <a class="logo link logo__footer-page" href="./index.html"
+            ><span class="logo__first-half-footer">Web</span
+            ><span class="logo__secondary-half-footer">Studi</span></a
           >
           <!-- Адрес -->
-          <address class="footer-address">
-            <p class="text-address margin-on-footer">
-              г. Киев, пр-т Леси Украинки, 26
-            </p>
-            <a
-              class="link-address margin-on-footer"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="link-address" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+          <address class="address">
+            <ul class="address-list">
+              <li class="address__item address__outer-margin">
+                <p class="address__text">
+                  г. Киев, пр-т Леси Украинки, 26
+                </p>
+              </li>
+              <li class="address__item address__outer-margin">
+                <a
+                class="address__link link"
+                href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address__item address__outer-margin">
+                <a class="address__link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a>
+              </li>
+            </ul>
           </address>
         </div>
-        <section class="footer-join">
-          <h2 class="footer-title">присоединяйтесь</h2>
-          <ul class="footer-flex-links">
+        <!-- Приэднатися футер -->
+        <section class="join-in">
+          <h2 class="join-in__title">присоединяйтесь</h2>
+          <ul class="join-in__list">
             <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-link-icon">
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
                   <use href="images/icons/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-link-icon">
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
                   <use href="images/icons/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-link-icon">
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
                   <use href="images/icons/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-link" href="#">
-                <svg class="footer-link-icon">
+              <a class="join-in__link" href="#">
+                <svg class="join-in__icon">
                   <use href="images/icons/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </section>
-        <div class="footer-submit">
-          <h2 class="footer-title">Подпишитесь на рассылку</h2>
-          <form class="form-footer">
-            <div class="form-footer-field">
+        <!-- Submit -->
+        <div class="submit">
+          <h2 class="submit__title">Подпишитесь на рассылку</h2>
+          <form class="form-submit">
+            <div class="form-submit__thumb">
               <input 
-              class="form-input-email" 
+              class="form-submit__email" 
               type="text" 
               name="input-email"
               placeholder="E-mail"
               >
-              <div class="form-thumb">
-                <button class="form-button-subscribe" type="button">
+              <div class="form-submit__box">
+                <button class="form-submit__button" type="button">
                   Подписаться
-                  <svg class="form-button-icon">
+                  <svg class="form-submit__icon">
                     <use href="images/icons/sprite.svg#icon-send"></use>
                   </svg>
                 </button>
-                <!-- <svg class="form-button-icon">
-                  <use href="images/icons/sprite.svg#icon-send"></use>
-                </svg> -->
               </div>
             </div>
           </form>
         </div>
       </div>
-    </footer>
+      </footer>
   </body>
 </html>
